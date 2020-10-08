@@ -1,0 +1,1284 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://beechat.hive-engine.com/api/users/login?sig=20fef57ed4914df0e457b059afb2f571eb0ddc556c53428fd75cf7057664dabe695dc571835cfdf44331dc90ea55dc9afe0ab81094957971ecafb152e3660e44d3&ts=1602190204983&username=social
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - beeline/0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Thu, 08 Oct 2020 20:50:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '75'
+      Connection:
+      - keep-alive
+      Vary:
+      - origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate,Server-Authorization
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - refresh_token=Fe26.2**ef5f95a6d243f15e7ac1d84a47edcee1e2b373d2447a85e860f229b50b280fab*zGptJB1jcc__7y0XM9ZdMA*rYQD3e0ugQSNYhMW2nEe1hlDpL1iRxJWrBa52xtmG4H-8y3_-a-x5Mv5m6WSrKZJo4mg_sSvsTTMqyq8UynBaPa4VVzJdS_RvQOogK0mzQtO1q7TvTmASafhF0ElyIPUmayDBBBig-a-xD1B8zNti5qOV2BdTgdALQ_95RiuwYqayEjFU1oiU2dioZh-OxcqjvN1qgZXddbzqO-gNW8pKBnyVPNaeCjBRkZZgsoBXaG3CGaCHZljslebNUbfDA8nUoWwC9WFwXCv_kMCM88-IQV3zYryhMyROSBKkX10mInMxxEaMS41D3Z9E8_Jg-USZIveJ9oyK28GsyldyT0PKZKtSR4n1xmYfE7nshRdLrgrVLUYST-yAGZRdFaXZmCzpGaoepDUCiPT59mtnxbiyg**53f11eb0a94e39b6d48ffbbe4ef0111984ca53eaad208557f93d30a05a7f080f*koRef-_UYS4Fs9MbO9YyBNiGVAVCZAa-I9AKBBJS6tM;
+        Max-Age=7776000; Expires=Wed, 06 Jan 2021 20:50:05 GMT; Secure; HttpOnly;
+        SameSite=None; Domain=.beechat.hive-engine.com; Path=/
+      - token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzb2NpYWwiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMjE5MDIwNSwiZXhwIjoxNjAzOTkwMjA1fQ.xPf2ydvlUgGY9olw4xGOMeToPG--TONT3Ogs6vbzonM;
+        Max-Age=1800; Expires=Thu, 08 Oct 2020 21:20:05 GMT; Secure; HttpOnly; SameSite=None;
+        Domain=.beechat.hive-engine.com; Path=/
+      Accept-Ranges:
+      - bytes
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '{"username":"social","admin":false,"ws_token":"01EM4ZMRG474PXGW33MXZM27BE"}'
+  recorded_at: Thu, 08 Oct 2020 20:50:05 GMT
+- request:
+    method: get
+    uri: https://beechat.hive-engine.com/api/users/login?sig=1f367fbcb6e26d4a1bd4bf541a28d02c83d04b5554fd177e2d66ce2f36978a9233cd8e40ef1ea191bca77ced44333825127c15092c3edba0d965949125aa960aa1&ts=1602190219670&username=social
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - beeline/0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Thu, 08 Oct 2020 20:50:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '75'
+      Connection:
+      - keep-alive
+      Vary:
+      - origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate,Server-Authorization
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - refresh_token=Fe26.2**ce55df1a63dbb8d59011f168327e89e07f363ba339538987437cdd804c22a534*rfw4MT3mUVprGsDxL7HJZw*2N-UC2Y98ZmtdIPZLVdxwRnGUuW9u7GoC4zKQ6kBEn54rGCqwu8btgVPCOy0YjnJA9uaSXdM4ksHyYf3aS76Ag3AOFrbxzAblh65DmAKvwwC3D6Jhf4vgbY_I_5zmBN19tz1xITtBe8x7b8MYS54D-4dFhy_-qfj9kodslq8KBfvkaVBQeDuJpWB3d9pqu23gn9w2NjC5zEbYbApLx8Bl02GjomMHO3XxPcM7fmq6KPQXIZp159MfuzvDeORcyc04TWVr6IZkkmXY5HQrjG__tI8x9IttCQbogg6yMKidz4Ix-eKifBKcmPmVgWA6hfZHMDY5pN7RMY4XM5ycwTIKC2hL8FDf0AL6Xt3NFCO9tPaoXYe_yR3kiHGUukoqBGfT__Wy1dkMMpJvVcCDahbsA**a3fbd3e825d627c295cfcccf54b04fea3b7a2e01134bcd7eaf5bb2cf73cad7d2*4jnfaT9AHwttjTkBksY4BjoplPJRehnDiEDJhJyvtPY;
+        Max-Age=7776000; Expires=Wed, 06 Jan 2021 20:50:20 GMT; Secure; HttpOnly;
+        SameSite=None; Domain=.beechat.hive-engine.com; Path=/
+      - token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzb2NpYWwiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMjE5MDIyMCwiZXhwIjoxNjAzOTkwMjIwfQ.zIFt0JhmwEZUDQIsACNZzacSA5ZAEKnkgnGS3Rh_1vk;
+        Max-Age=1800; Expires=Thu, 08 Oct 2020 21:20:20 GMT; Secure; HttpOnly; SameSite=None;
+        Domain=.beechat.hive-engine.com; Path=/
+      Accept-Ranges:
+      - bytes
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '{"username":"social","admin":false,"ws_token":"01EM4ZN6RD3221Q39M02SKNMQV"}'
+  recorded_at: Thu, 08 Oct 2020 20:50:20 GMT
+- request:
+    method: get
+    uri: https://beechat.hive-engine.com/api/users/login?sig=205d9a0f6794cf6d15a12de75f5ccad31116585946a9ece8107039dcf7c9bbb61af4cd1cc2646c597372fdeefc79ab41037b82799be3dadc92f8c3f29752bc0a08&ts=1602190233627&username=social
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - beeline/0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Thu, 08 Oct 2020 20:50:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '75'
+      Connection:
+      - keep-alive
+      Vary:
+      - origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate,Server-Authorization
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - refresh_token=Fe26.2**7fa4b001528cc21be44c059559cd48c8afc8b63aaf0f7cde18b9ac042ac9572e*xJ7tD8kbvBmzs3GATCG2EA*O7TjSkwk8JRdRp1M5zynUgLskWz_S_VqOqf1xNU8ZvakGHpWGWqR5mHtPkLeVZh5AJoCTDtWgqh8Fogm2br8lMozodB7_Ex_4lIeimAnYBmIkdcr0uVHBaaU1yzgOAhdQm8-JNYgXWJHk73FA9QhpHlPgYEkkgTPhxpDSb9ILqakkuncnrd2dzWp8Alx3SeZH6cHG7Nkn_mDVrJzSYgDs634YCD5Ao-cAJUqrQZoG0TPlkBgtXAlJIna8Jqn_M5I2km9xL317atI8SI1QbMF6PB7dF62cDwq5wjko-p0On5rDJYAS41NXeP0eBMZr6GvIjWf6lRvKoNiM1r9E32aySB41jm4JqqpIZz2Glx_acIV8_aQUDI1gfk0hjoMx-LIlqDZxvcSZbSeCPH763MANQ**77411f591e144420d567590e0b8d793d8617eea1dd174da819f8c67554d54612*vXHIs1j_snrVAlw4ZWVxQrfnTl3uhUeeCGd6GMCaAuo;
+        Max-Age=7776000; Expires=Wed, 06 Jan 2021 20:50:34 GMT; Secure; HttpOnly;
+        SameSite=None; Domain=.beechat.hive-engine.com; Path=/
+      - token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzb2NpYWwiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMjE5MDIzMywiZXhwIjoxNjAzOTkwMjMzfQ.58K33F62Ix8nKjyJ1kFTWRjjTH7CL-X_YAgkit-rxK0;
+        Max-Age=1800; Expires=Thu, 08 Oct 2020 21:20:34 GMT; Secure; HttpOnly; SameSite=None;
+        Domain=.beechat.hive-engine.com; Path=/
+      Accept-Ranges:
+      - bytes
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '{"username":"social","admin":false,"ws_token":"01EM4ZNMC8W1HD081SBGBVRG89"}'
+  recorded_at: Thu, 08 Oct 2020 20:50:34 GMT
+- request:
+    method: get
+    uri: https://beechat.hive-engine.com/api/users/login?sig=20ec10b7b7b6ec67e2b357c8b5840ae71ff8c6c237e984aed6b07ff02a5f18a5c882ba89e0477f78a201140cdaf90909637d4f0edda2316f2e9491727834f19e71&ts=1602190297215&username=social
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - beeline/0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Thu, 08 Oct 2020 20:51:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '75'
+      Connection:
+      - keep-alive
+      Vary:
+      - origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate,Server-Authorization
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - refresh_token=Fe26.2**139ae0c50d3b1e8584d2631a7d34c1c00b55293f6dba6b366cddec707c545ab6*Mvlvz1vS5Q2N98anDuWI4w*vStbWX_U0bfjH-eCAHuiqH6Jz8IgV8bLgBr_eSemC5__hrsChmbI9FU6j3ro30xfGtDxatG6cYF7od57jasSs0Lc4p5L6wVcuW9utkZiFIVWxHt_OU54elNyEZX4XAVOSCTml5o1iRsMq7tIBpo1gQDWNlP-GG2D5Q4uC74Vi81vA-wAlSzgJBRUuUm42Tw3FeddeM_TUHpLz0tIuraXf32modgXpygeh11VQ-JJjP83CQ6wsM88M-13ibsudLV2DMfETYk9CRpWtnV-Kd8a0pBSRlT_oE0qiDmzdceKJFq_GGFOqpbapCxWFr_Z60oNJAmXfNWQHbZ5U3GNNweyTxVV7y8SDPr8eATD2epr7-4q0nRdyVNnv4lDyuTx_TaDPe3ysual0fWzaLVHj2m3eA**5537381f8562fc9e87bf4281b8d742f21ca8945c9b9f7f3f00cabb30150c43c2*aC1gUGJblIcIjLpAXnyr7V76gboWDdo5lPgiNXisOoU;
+        Max-Age=7776000; Expires=Wed, 06 Jan 2021 20:51:37 GMT; Secure; HttpOnly;
+        SameSite=None; Domain=.beechat.hive-engine.com; Path=/
+      - token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzb2NpYWwiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMjE5MDI5NywiZXhwIjoxNjAzOTkwMjk3fQ.aR4MF0TnXeVXFzU1DbEHCqMiZ48KY-_Py3g8kfHhv3E;
+        Max-Age=1800; Expires=Thu, 08 Oct 2020 21:21:37 GMT; Secure; HttpOnly; SameSite=None;
+        Domain=.beechat.hive-engine.com; Path=/
+      Accept-Ranges:
+      - bytes
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '{"username":"social","admin":false,"ws_token":"01EM4ZQJEX7J6Z6Z7J0EMWFNAE"}'
+  recorded_at: Thu, 08 Oct 2020 20:51:37 GMT
+- request:
+    method: get
+    uri: https://beechat.hive-engine.com/api/users/login?sig=1f7c6e826ac44c25c491cd83096db7656fca576a59a2cb79d4de1acde4d880de7db432d3839dcc61ea8f69b2e8aacb3f74f4c6f97ff9efa8b09c8c74d1cba5cae7&ts=1602190318596&username=social
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - beeline/0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Thu, 08 Oct 2020 20:51:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '75'
+      Connection:
+      - keep-alive
+      Vary:
+      - origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate,Server-Authorization
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - refresh_token=Fe26.2**4a21b58da49283f5ea45e8c6efd7491b5c5b1916ca3d07a20930543372054984*5swIFse4wQErseq4nUqVeg*Zg4FGIypkHT-iE0Ymz4RisVaccaz54CbNM8sK7GwseF-JL0nhpxNJKfH2QoljF4zY_qGVjj81m-RAzWUhCoT7_KqxyHsVQHJz1I2Ca3pggVC7jKq0YIX85D4uCvsusHVJpcnBHTHjbRk9HITYmanO2wMwxYKKvsp1PjHwjKVhK_J62BS3n4S5oSS7j4zwmmsPnR2HSet8BIe09K3VNQ4cVFWk9PaUhck35b9YrJyjo6UBKWRahpFssxScs6ci_pRVDn60YRx0CqHvZB2P4d0O0jHXD5lzK1roH3NQZ6gCrywpOA_KGrQB4z27x8oat486nSSEB9JW_Y_PVpS9n2Hf_HPufzxgv0YWfe-EfUAHVgE3YCKYJdmPP_T2xI184Md3znXVYvBvuB0xSNRLXKzeg**0e7da967c2049a4d686042761d29349eaac17fdf337b8c0131d3ad13bd965db0*IArJSEA9Zqjqu_LlpbujmQsI2pdVsz7fBeAai6lNJKg;
+        Max-Age=7776000; Expires=Wed, 06 Jan 2021 20:51:58 GMT; Secure; HttpOnly;
+        SameSite=None; Domain=.beechat.hive-engine.com; Path=/
+      - token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzb2NpYWwiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMjE5MDMxOCwiZXhwIjoxNjAzOTkwMzE4fQ.qF9TgFqhvjWJ8Oc4o6kv-oAicBtdoPbdxAQ5Grn4V08;
+        Max-Age=1800; Expires=Thu, 08 Oct 2020 21:21:58 GMT; Secure; HttpOnly; SameSite=None;
+        Domain=.beechat.hive-engine.com; Path=/
+      Accept-Ranges:
+      - bytes
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '{"username":"social","admin":false,"ws_token":"01EM4ZR7BW9X298MN7YE3TGXAF"}'
+  recorded_at: Thu, 08 Oct 2020 20:51:59 GMT
+- request:
+    method: get
+    uri: https://beechat.hive-engine.com/api/users/login?sig=1f1fd2b726395e30d088dedfc3fe806997d189931df96356ee06681eaa060ccd3e170e13d68f69092910282ad0e3fefe690c321c2f53d92a51095408f709729802&ts=1602190325496&username=social
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - beeline/0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Thu, 08 Oct 2020 20:52:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '75'
+      Connection:
+      - keep-alive
+      Vary:
+      - origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate,Server-Authorization
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - refresh_token=Fe26.2**7bf2a58717289446788d61f2103cfe6fb6cfd22ea78b33888a19f1751fc677b0*15ydA5rUyZ6coVNDMvYx3A*cBZWEmx4t6kJX7-K5DFiUS_GzsbSTJG4EB9hCwl9Mr9992a58icgrGrsHzfy5dBAimcToMYDLaGJICxSlAZjsOgujznSQ69DSyTHXWtyVSS3ywpmAm8gy0myOjd0oPHxcJ3eO0He2CDh07C-kKNCORFJ3MdGhpn2BTE3qNnzlV-iXJTSvtyZ0wdLhOQhlwawKE2agCFGARIfo4U7N-y5rSlzTUHmdVENAxOUXeLq4Cw1uhFmAC5r71qWr0VmeP8L6mU62xPKhjHZBNQX6-o0KnIK4Hpim492eJkBvHdFAZWlegzTo-cz4YYT870eHr6HE2_yQQcixCdGRzFwhvthM-dSKLjU3tPJs7HFXjVVpZWlFSUfztg-i6s4bIGkhlXXSG68MI8JSmNdphxmEl8Eeg**75538de4593cfa615b069ec128a45542442ce88dbaac26dede79e73fc8d3cec3*aO94JPSjdsX3KBl_WLNmRTw9TzggZuF5JSxTF3VMUvM;
+        Max-Age=7776000; Expires=Wed, 06 Jan 2021 20:52:05 GMT; Secure; HttpOnly;
+        SameSite=None; Domain=.beechat.hive-engine.com; Path=/
+      - token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzb2NpYWwiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMjE5MDMyNSwiZXhwIjoxNjAzOTkwMzI1fQ.-7Wx0paOUKjJic0JQ8pOPs4FPDpEBavt37o9WAOzOBc;
+        Max-Age=1800; Expires=Thu, 08 Oct 2020 21:22:05 GMT; Secure; HttpOnly; SameSite=None;
+        Domain=.beechat.hive-engine.com; Path=/
+      Accept-Ranges:
+      - bytes
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '{"username":"social","admin":false,"ws_token":"01EM4ZRE3WVW9KJ20Y5EVPJ9FY"}'
+  recorded_at: Thu, 08 Oct 2020 20:52:05 GMT
+- request:
+    method: get
+    uri: https://beechat.hive-engine.com/api/users/login?sig=20abe813e6e48f3f20146dcf507d168bd334e9498b269fca155265a7debad0694450f2a624c2bcce27e506f91a39fb144dc0a16677a7762947f226ced2f6e178ca&ts=1602190358761&username=social
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - beeline/0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Thu, 08 Oct 2020 20:52:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '75'
+      Connection:
+      - keep-alive
+      Vary:
+      - origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate,Server-Authorization
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - refresh_token=Fe26.2**899f6be4ec554249170f1f55a388e9bfc9bd97c5544dd5a5bb3544327c59aa57*N0XyH2JFSYVCW2YmI4LyTA*RsP8bsgYbc9W8T2F6yha15IeclMZbOxR4jff6Bf3PWJ6_gUJvcV_mWYMLV-BYdMYgyPsIihtPiH09hLv9l_eSC3tXwUaY6Un_1_UfUzAxyniHEmoDzD3dK4Oe1bLipMb68w18_CKtFm17jAohgrUqlAKrcUGE9CpgUPO_9LtBKSZeoRE98qd0UbZGwEQN9Axjrx-hB1v_4gdVscUxLi9578BqwsoZvbMlPGFkhLXVIqk5yw6KBtmC_LpXJR0Q77ay16jzHoEnv29-kttc2PcS053k3OXqlsoxEAt_yK33mc13ATqzl6lBBzl4MoMPyYCnKTclE5aKdOQBqk-AmmkGiLpNyXHEWv9PXkoRXmMFXogSp8Xx8rXgUz43RHmL7zde9yIijqVbOfritYbMqiXFA**50deeaa35a3535a3a726289b2aa726dcd9297222fac7e8484148e15408369edd*66D1x-i_vXdp4fVovN7Ga3-39FcI0uXhhpiRmIgCUPo;
+        Max-Age=7776000; Expires=Wed, 06 Jan 2021 20:52:39 GMT; Secure; HttpOnly;
+        SameSite=None; Domain=.beechat.hive-engine.com; Path=/
+      - token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzb2NpYWwiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMjE5MDM1OSwiZXhwIjoxNjAzOTkwMzU5fQ.NM-GiTwF-3YZS1aTG-1g3x8oafNdfMu6SRsZXB3Argg;
+        Max-Age=1800; Expires=Thu, 08 Oct 2020 21:22:39 GMT; Secure; HttpOnly; SameSite=None;
+        Domain=.beechat.hive-engine.com; Path=/
+      Accept-Ranges:
+      - bytes
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '{"username":"social","admin":false,"ws_token":"01EM4ZSEJW9T0D96RW4F9QR3ZP"}'
+  recorded_at: Thu, 08 Oct 2020 20:52:39 GMT
+- request:
+    method: get
+    uri: https://beechat.hive-engine.com/api/users/login?sig=1f6f98b15fedf954878650220c07d926586e6b97ec838d50a66418141d765ee617b364a37af98a3ecc8d0647734dc90875a7798780aeb97ac122fd41dc51ea992f&ts=1602190374010&username=social
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - beeline/0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Thu, 08 Oct 2020 20:52:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '75'
+      Connection:
+      - keep-alive
+      Vary:
+      - origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate,Server-Authorization
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - refresh_token=Fe26.2**4afc207842bd6038af895b43d44560b2140945e4a9816efd87b01a50325627c3*fdyvzWcIiRYPyRVT_XQT0Q*BYRBM6SW0-tnSbKF5CEkquF9V7Ye2Qy0naej5qYZZ6pzMQ0Mcx9AQaMDuI5akS50xGTJOejE-HlODd48JA-LGjMqTFM_c0LRq1O2tdzv7BbMBbeNfpyBNNCAVpPDUGk91_KWNEmZhsXsDdjjRMbbDme0CBAs9deVOosb5qqxcNG1BDZMS3WGnb23MmyHeCKYD3nRaCu9uub09M_fDj0zCOQlBBmRpajjl1QhPajQTU1Dyqj74ZmCABnivDV9sOvxTavvFzfgry4jKch7x1NVGQ0PpjVuF91Glk6HbGCm2gYP7FgJPJSKh4xhvyoeXACjEWF8n-3LwEdmFsmKpYwxusYZwJCVrBLnmUZZ_mJlKUw-JLyL4nNwMMQtdPb7Ejpv2mBcytTSizv2uUhGPNIoEQ**3b3ec08f874464f9de63c6c61ec9d417e0ed86691b1c4e83078a893c216fd92a*OQq_ztnzfOalcvJxQIIi6_khhQAdhTGq1Mx6pkmLpJ8;
+        Max-Age=7776000; Expires=Wed, 06 Jan 2021 20:52:54 GMT; Secure; HttpOnly;
+        SameSite=None; Domain=.beechat.hive-engine.com; Path=/
+      - token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzb2NpYWwiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMjE5MDM3NCwiZXhwIjoxNjAzOTkwMzc0fQ.ZdLPtqmfUjPAaG5J8rbupNLBKDQdnDqJuoaLuXYwqo0;
+        Max-Age=1800; Expires=Thu, 08 Oct 2020 21:22:54 GMT; Secure; HttpOnly; SameSite=None;
+        Domain=.beechat.hive-engine.com; Path=/
+      Accept-Ranges:
+      - bytes
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '{"username":"social","admin":false,"ws_token":"01EM4ZSXFQV0FZQH5KE5GRPSEH"}'
+  recorded_at: Thu, 08 Oct 2020 20:52:54 GMT
+- request:
+    method: get
+    uri: https://beechat.hive-engine.com/api/users/login?sig=1fa081f7656063b1754a43ac09afdb8a66ead7623273cb71279ac9fee4f5f4e6800861c2fdd29ff82a35b7a58cc62627d69c0bffa3634dcbdbc173a99b1622b7dd&ts=1602190390414&username=social
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - beeline/0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Thu, 08 Oct 2020 20:53:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '75'
+      Connection:
+      - keep-alive
+      Vary:
+      - origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate,Server-Authorization
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - refresh_token=Fe26.2**5eb0904fd1763bf8e06ea57b2db8a70b1e52a495f4e062dc2d93a328d60d6342*jKc6VNFbGImsVeS_Yc70Hg*yM32oGyLSLLXDPo2L5YABr_ik6cvHq_kTL0AaH2Ep_fJIYiRnCKp3GiMi03sexnyHANlQwQqwNW1OVojV6C5UX7RziXnVJlSaxQ5cxfs8Ln6gbK9BUleCvb2g4h0brhwLapHE-i76vVErGawma-Zv7n1rNA7bnL7q8JL88liqPCPRGqYXIpLTwGaXvk0CCdNAX5-cZOnqz0epqu-z-NHT8B0zan-7Vqd89Ac7aKUFY6rk-WW7KtKolV5b2-hmURmWHAiQu22ubi410aVvZylZWs1z42MPuRGfV2HYwBmL-fuwKp0YpkCJ0SUeymwQc3TdoSyPRyvR98Wuj_7LFLAd0x8rM5Sk990bczJtBwSxEs39zKeEM-TZsE7_e3OfUvitv2D7zcDI0Ayl_EGbPgiig**ada620573b32cac09b3913ed361e9d910e230f3d758954802895cf97c1dda5b5*vuqP4Q6p5nuPRwl6wS-nlnEhubJFwKb72_ZcC_unv3c;
+        Max-Age=7776000; Expires=Wed, 06 Jan 2021 20:53:10 GMT; Secure; HttpOnly;
+        SameSite=None; Domain=.beechat.hive-engine.com; Path=/
+      - token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzb2NpYWwiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMjE5MDM5MCwiZXhwIjoxNjAzOTkwMzkwfQ._Ub85iWn8P6tjfUGbIg5mAnbxXsMPdBrkPUEJCS9RyU;
+        Max-Age=1800; Expires=Thu, 08 Oct 2020 21:23:10 GMT; Secure; HttpOnly; SameSite=None;
+        Domain=.beechat.hive-engine.com; Path=/
+      Accept-Ranges:
+      - bytes
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '{"username":"social","admin":false,"ws_token":"01EM4ZTDGB1GT01VT7HVB56Q7K"}'
+  recorded_at: Thu, 08 Oct 2020 20:53:10 GMT
+- request:
+    method: get
+    uri: https://beechat.hive-engine.com/api/users/login?sig=2040f52dc102c96c0262780a5cda6f95c9f2bd6e078486c703f2312c48e67e1aaef2e974538c92c2e89cf7584d7423a71ddacff149840c7589fb524b3957033c41&ts=1602190402383&username=social
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - beeline/0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Thu, 08 Oct 2020 20:53:22 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '75'
+      Connection:
+      - keep-alive
+      Vary:
+      - origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate,Server-Authorization
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - refresh_token=Fe26.2**f0ef70aa7a311e8f2958778b56caadc406b7e097979bd4f43f0cdb9a4ea56673*qCJ9F5DDGbHuRB2lIJl4hQ*8F6kPviKDCO52D4cp9pYEwaER_fhEADL-g949dEU0Z7rtjjeeBhYs7snzszNa9z7PnyfH9hON-_YvmsAUH1zkkyHNGx11XCVb38sWIcJzlO6XfP5i3JBKUAfByD2Bxfop-6NzDC-JaGO76ldDDvQ4PVeAaxE7HZHu1MWkrp9JwIjrRzw8kDGO7hQmsq1uIOkVWydU-NpnOvBhZl3lqpD5bvGABIQcMN1QG-N8uay9VROWqAqyJn_oAzpZAZ0iO_icuo7Q6uDMbHgdkC4uGrS5ZoZTHYk_BaoZkzQiiMByAJ6Wf1-V14ijvQyEeuLCaryiP1bQ17aOp7Jmr-whL34_PbhFm73CMowzbvX_nQoO8Xb7PFjXtTeYTYjDQTru715ImppiZEeAkU8EMjyK9Cgqg**02be1bab15f1c0f426423cc4616b09de2b3afe21c525fc431170d0fa79573528*WPTuNbD7FBirmugwuCSVgKVhYO1DVbsa7X9tQDaTDw8;
+        Max-Age=7776000; Expires=Wed, 06 Jan 2021 20:53:22 GMT; Secure; HttpOnly;
+        SameSite=None; Domain=.beechat.hive-engine.com; Path=/
+      - token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzb2NpYWwiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMjE5MDQwMiwiZXhwIjoxNjAzOTkwNDAyfQ.hpDS-neatsx_p0nxMav4bxfRYY6heZ9j85L4s3G4Cm4;
+        Max-Age=1800; Expires=Thu, 08 Oct 2020 21:23:22 GMT; Secure; HttpOnly; SameSite=None;
+        Domain=.beechat.hive-engine.com; Path=/
+      Accept-Ranges:
+      - bytes
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '{"username":"social","admin":false,"ws_token":"01EM4ZTS68XVNATZHY80P38Q01"}'
+  recorded_at: Thu, 08 Oct 2020 20:53:22 GMT
+- request:
+    method: get
+    uri: https://beechat.hive-engine.com/api/users/login?sig=2011972b033f0bff67fe3913fcdbf554b7f1f9ba6d950bd8078677c7561a90aaa3c19af75585ada18c69f49e8ead45951bb6054140964b24c227488e99da61e499&ts=1602190462850&username=social
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - beeline/0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Thu, 08 Oct 2020 20:54:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '75'
+      Connection:
+      - keep-alive
+      Vary:
+      - origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate,Server-Authorization
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - refresh_token=Fe26.2**e83ca52eb68373feca36f40230762dce0eb5cfafe6eb5ab98aaf19e0a690eb88*ogtrvHXk8Ph5GuzPiBigHw*JYOXUC_D28iah2R_8SmMlwNgBcXLUvTVVcL74IBED2lEPkFGpAhZmnQ3EEim0VDKPmg_TNNCnHAJprKUztd3T_WpxDUdOpk898gHoHZDoF767F_KCu6g0BbivjVp4t3-RktA6pIixDA0Cu90P9g6smN5dQJZSz4zJ93jKX2HeyLMk1bh-NtCsdisBmLBDBifYJtl7OzdE7bhko16H7WHVjsa07Wm8o5I-1g4UyIOhKG1BDnNJQ9d0Rc0x3qXbWuuH3Zf448Wam2peJaZZtCauC9kYHDKyBGiZjwLddBIVlIcKWvCzi8W9rpnq1tZqAPB-D_y6bUwbqZm5Xb2GCUuax-bHKYtLeY2z6hK3NDt_Ur7-wyumrYVbkbA3vHXqOXYaV_7ZolJ9yzvyZ_lGdIr2A**246db531c0c22dcb4b206d3f812dc6adc8567b7bcc56202dccf4d3b2e2dbf6c5*x0z5-Pi3WMWdouwBzRzcBa5A-lDCo6XOPEw0ywPOZRo;
+        Max-Age=7776000; Expires=Wed, 06 Jan 2021 20:54:23 GMT; Secure; HttpOnly;
+        SameSite=None; Domain=.beechat.hive-engine.com; Path=/
+      - token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzb2NpYWwiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMjE5MDQ2MywiZXhwIjoxNjAzOTkwNDYzfQ.-X6DfBi2K51486RoEEqrxiXcDy3XIV69-vcXRvdLxXI;
+        Max-Age=1800; Expires=Thu, 08 Oct 2020 21:24:23 GMT; Secure; HttpOnly; SameSite=None;
+        Domain=.beechat.hive-engine.com; Path=/
+      Accept-Ranges:
+      - bytes
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '{"username":"social","admin":false,"ws_token":"01EM4ZWM6QQWQE02SBHGH27CJG"}'
+  recorded_at: Thu, 08 Oct 2020 20:54:23 GMT
+- request:
+    method: get
+    uri: https://beechat.hive-engine.com/api/users/login?sig=1f71d484073233ee1c4779e8947d3c0ce5fc0440810a68e7ea94143cfee4345db6442df31573f7749d5c04e47c673cc482ac3f64cf26d5cf8b2b51343abffd7858&ts=1602190507589&username=social
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - beeline/0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Thu, 08 Oct 2020 20:55:08 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '75'
+      Connection:
+      - keep-alive
+      Vary:
+      - origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate,Server-Authorization
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - refresh_token=Fe26.2**c2b4c5b623c6f486a192085a4f626ad340dc734b347842a320c3742b58e4331e*FB5-5bznmlTBx87tcB8cPg*oCh6MjHI5mspsfVzkDcGxQONo3iOy1JqwhwPeG5bpc8HgeVmrH7aaHHidjf3uM7Qq89CK2Vme2ruLcqLu-hAsGHxNNC2_OmphTKDH0sW9M8hDf6GmK6fZtxakpAnH_HrM8yWHidEqZPuVUDDWBHHr2lb88XYM0ZSeajmK_mVUQKmbRV2H28nFQQsQdrSpJx1iyOnMQIoJACOaHhDJ3Ryc81VcsyREpLsleJQKG9L6UZMNbLUUFsO3WM_9Hl984gm9Vvltoth3AYBxdfIx1_P9tc0HsnSe2OavGhO8e3eJG71Uymwt6RR3IVSiuYI2Iot8gCB64KM3Xdq9ACMgurDnDW1z5kmonDxLglOJHQtWhqzmB_EhSw_P3Ux_Ntq1417sXxE-zdIoykPM56SK0sFcg**aff6416625a9cc449a48ebd2dbf60e14fc12599fe09ab19b6529a4b07c49a064*5sDPcE3ESw5P4czw6JiK380n-6zrM2dD5N5YvVIuReI;
+        Max-Age=7776000; Expires=Wed, 06 Jan 2021 20:55:08 GMT; Secure; HttpOnly;
+        SameSite=None; Domain=.beechat.hive-engine.com; Path=/
+      - token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzb2NpYWwiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMjE5MDUwNywiZXhwIjoxNjAzOTkwNTA3fQ.mQjTsQ1OBA6iX13Eq8NvuIGHLdcpemDLD9kg8ORCBXA;
+        Max-Age=1800; Expires=Thu, 08 Oct 2020 21:25:08 GMT; Secure; HttpOnly; SameSite=None;
+        Domain=.beechat.hive-engine.com; Path=/
+      Accept-Ranges:
+      - bytes
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '{"username":"social","admin":false,"ws_token":"01EM4ZXZYZWH6FG1S73BKXWKM6"}'
+  recorded_at: Thu, 08 Oct 2020 20:55:08 GMT
+- request:
+    method: get
+    uri: https://beechat.hive-engine.com/api/users/login?sig=2071b17ef6089fc20ad17f219a10f22525d833fa1f9700aefa1b8ff34d90ead6e42555f8bbcfed3f21b8c5148e8e5efacddda25cb50598081982cbb8640d9d5028&ts=1602190522031&username=social
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - beeline/0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Thu, 08 Oct 2020 20:55:22 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '75'
+      Connection:
+      - keep-alive
+      Vary:
+      - origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate,Server-Authorization
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - refresh_token=Fe26.2**7d77ef98f1f667f292c2958a891e961c1272196aed78a4994f947d36dfc76620*DcjIS5GYY0teIvrAhfrdTQ*h8kzCpPCfGF80VMqVfNr8MYHuYZ4s9BCpGfG5ma82lREsWaERqgV4SIXjGsQ8VbzdUN_zixHZ_Qpp8CvHjYzCP-WGRmVsDAfdWDHZlczqqs-sR6xXthqpsBurvR7ZVipE7k9sfNXg6IFtHkxqZjyya2l9Ni4hn5y3Pk95HXk6zgL3JXgk8RYyCtU0SfDjeBXILb-ZdDCOMUKInhTuIRWIVmz6i5jsToNiRM5w15e9Dyfp_4ipQ_9KUmKIv9EazatkubgYUJNkvsVmHTPywgDUZOaZPeOzIzdQ63qVtKN3P9XPPbAkD-WwWFYl_3IPXTA_OoR0eYKYSZAIdOxB4jZ7TTfgH9XuHTxd146-7HzwQbUEExg5qfLAE-O2Qq5lZ9qJb7zW7WJi0DJFNQEGBgs9Q**606f2a19259f3a9d610316597af730e2901b735342bbdae2972961c642bccbb3*jEcw2b9ipJc71uMVkWXWt6GVGo6_lbtuxYrS_R36J48;
+        Max-Age=7776000; Expires=Wed, 06 Jan 2021 20:55:22 GMT; Secure; HttpOnly;
+        SameSite=None; Domain=.beechat.hive-engine.com; Path=/
+      - token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzb2NpYWwiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMjE5MDUyMiwiZXhwIjoxNjAzOTkwNTIyfQ.icGr-DQLbCWwGteNnkEEdRWiUwYaQv2f8zdAoMJsv9g;
+        Max-Age=1800; Expires=Thu, 08 Oct 2020 21:25:22 GMT; Secure; HttpOnly; SameSite=None;
+        Domain=.beechat.hive-engine.com; Path=/
+      Accept-Ranges:
+      - bytes
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '{"username":"social","admin":false,"ws_token":"01EM4ZYE23NY0YXFJHP9N38QEK"}'
+  recorded_at: Thu, 08 Oct 2020 20:55:22 GMT
+- request:
+    method: get
+    uri: https://beechat.hive-engine.com/api/users/login?sig=1f557b4f8f0ae33b27dc0442af29590a4fcc442f8549fecfc94444a5c22954db5d34cf0a5d657ec200ad8f2a46b17f20b8f30b9a179b6fe78e426013d730d58e94&ts=1602190570859&username=social
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - beeline/0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Thu, 08 Oct 2020 20:56:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '75'
+      Connection:
+      - keep-alive
+      Vary:
+      - origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate,Server-Authorization
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - refresh_token=Fe26.2**fefe1057e1e9c20852368f572d372a9425e3bf54deb76dbd0c4b14ed01e15ee5*04dDmpBn0pIe5_IEgUpO8Q*qKZV_9BSBevPgMq2iJidIDYEe99wp7YyCuXjQCtA96RvZlIozb5vp3QLNvObf5QO8RLfDqWgvTlYrbsz5Nm-gBCu8xLfQltJ0m-xSiVR9o_y0VTRb2HAuCpo80HH0xV4bf_rzjjcvIP9domeAV21tzgMB7eck5XWfNGi217JSn0K9f_E5mHZ9xkPlCnNDa1gnqJYntAT37s5CVXGKsltQ_sbDSAXSsqAZPrhTo9SC6p3RWc5ykmdJiCcRHMcCWAXvVKmiX2D0L1blooTDZbD1CaOY6KodsYaJMJZtrR9xKqgvzD8WJxPqgYgQPiKbM7r4Ejx2o882lKGpIiPk7qSVgFzF54FLRbO5BfShc4sGyi-CZG9fXeVVQZ0rul-HFO1sMNYRm3pRTK1_C_Jz20l6w**ea3e3931972b9af5d6ac55fd1a632e91bdbb33d80143881fdc16f2e307beb16d*MBwk-vs5qN6fKox24CxBVtkof0x8-wOfxQyXS_3RXzk;
+        Max-Age=7776000; Expires=Wed, 06 Jan 2021 20:56:11 GMT; Secure; HttpOnly;
+        SameSite=None; Domain=.beechat.hive-engine.com; Path=/
+      - token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzb2NpYWwiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMjE5MDU3MSwiZXhwIjoxNjAzOTkwNTcxfQ.uRIHWQsHK2v8pSybMzGjfFn476pIsoZT01bZAO_S9Tw;
+        Max-Age=1800; Expires=Thu, 08 Oct 2020 21:26:11 GMT; Secure; HttpOnly; SameSite=None;
+        Domain=.beechat.hive-engine.com; Path=/
+      Accept-Ranges:
+      - bytes
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '{"username":"social","admin":false,"ws_token":"01EM4ZZXPGD1FA88W9568D7TRN"}'
+  recorded_at: Thu, 08 Oct 2020 20:56:11 GMT
+- request:
+    method: get
+    uri: https://beechat.hive-engine.com/api/users/login?sig=1f565496575514628505439efc9223b0f0b9e69e4fcede920da34323e5693f091b57fffa35efa6048e12e8020a940fa2779fb9021e91ecf0f970b6faa579ee3d9c&ts=1602190599671&username=social
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - beeline/0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Thu, 08 Oct 2020 20:56:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '75'
+      Connection:
+      - keep-alive
+      Vary:
+      - origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate,Server-Authorization
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - refresh_token=Fe26.2**bd6cd86d674641beb9ffd36c5badc2dd376d8e966ec58516409074c8042bb971*sGbfOgDiJC4g9EeQ6FZA9g*nZPoYd_RkFVpEzudNFobbVFhX3dX5peDO_rolHmrOjlHyKKp77kCTd1DiVmY-_oaY3nuDT1y9_3lZAoB9s3Gb2dpW19hJuyJ6fB0OlOjtmUecYRpwL69oHLKDRReremtHthgnh_zQlb9AXKcFA5fs6PotCsecaxVpMtWxbowaVFihPPDfyGrP1FmyCQYwrJ_ynp9qBtbmaW701cUMje89RBvMQks5uiDqiKddOTRPgWI_3UDXMl7dGpCuwCTS_lz-lCuGbzQW4179sgrDhLY4_uQWrBsR0CGfGRTzaBM4WnLhYkV929lUoYw8U68mmcCKZFCsanIKvPscirAFl5N3MrkTjC0pfrObfJ7ENP20y1bB2lLK29hWsv8JdFMYAlsbVCPrF1zwY-WdvGeHaAxpQ**de0709c6ae69e7458abcbf067429820523758a47598f146077c55ad497b79689*_032EHmSPRyHhwJKUWmAWnhLw7pxJJwCqdy6EYQqQ7A;
+        Max-Age=7776000; Expires=Wed, 06 Jan 2021 20:56:40 GMT; Secure; HttpOnly;
+        SameSite=None; Domain=.beechat.hive-engine.com; Path=/
+      - token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzb2NpYWwiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMjE5MDYwMCwiZXhwIjoxNjAzOTkwNjAwfQ.EvNNbsuVzzZ2iOBghTSlAUk4gl0BVt6JVm-kdGH2aNM;
+        Max-Age=1800; Expires=Thu, 08 Oct 2020 21:26:40 GMT; Secure; HttpOnly; SameSite=None;
+        Domain=.beechat.hive-engine.com; Path=/
+      Accept-Ranges:
+      - bytes
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '{"username":"social","admin":false,"ws_token":"01EM500SZ1S7TSP53XMRY0AA9M"}'
+  recorded_at: Thu, 08 Oct 2020 20:56:40 GMT
+- request:
+    method: get
+    uri: https://beechat.hive-engine.com/api/users/login?sig=208b7e47f1e8af7e11e6889fe8605ae78cc28ae4c1dd6930ddfb6814d6da624326686227496e0c82440a6dd63fedafa192c5d2f20f9d202ccce98e3a89c0ce80a6&ts=1602190620674&username=social
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - beeline/0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Thu, 08 Oct 2020 20:57:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '75'
+      Connection:
+      - keep-alive
+      Vary:
+      - origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate,Server-Authorization
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - refresh_token=Fe26.2**c1e772c34a8a1389be631ec4e6f58fbf0610ba8c7eb44331e946de92d256331e*tvR8uWSkK4N-SY-VKZ5Tng*g2Kyy1fJmTgZ_Bs7GIXx950cxEksMeG9uoLXt36h10jJTmDoChS3huDaTCJOuG0HfvWhDFLHSZ9qNeweN7IpUy96gmnPM1tkISQc-ijbfBz_I3pckI5QgcXZy7_hgMQ-7HPtYXYPrGJvN8nxl9Qvf8Wg0CpUvC_jgwvbgXBKT8bi_4ixXiCtKJ8fls2u8ZwGkymTYwVlw-cgOPqPGUza5Kddn5iIYgbIRu9ebjVSkTkoor4ZNp1EjDrlVHS-bxdw9pI7FmYs6DP1lrk74fnIEJH5KoXJ3n-1Rw5Wtq5jTcueue5pNw-et4YosKOASUye_sWV2M2L5LrJclI-WiufVUWih127GzSC-hu5B1gnOyW6VtBlpN114tZHOCz1mG2ybeNOmad-lp7A-YLvQGCeTw**b2f658e889766337fb3d6969cb198d047f5fea59508fc524900443d4066b646e*0oDpH0JjR1wK4KdHWkiiLotRRo5HNnHlwttsVWJc7SI;
+        Max-Age=7776000; Expires=Wed, 06 Jan 2021 20:57:01 GMT; Secure; HttpOnly;
+        SameSite=None; Domain=.beechat.hive-engine.com; Path=/
+      - token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzb2NpYWwiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMjE5MDYyMSwiZXhwIjoxNjAzOTkwNjIxfQ.hTQjOiYAlqOgQ8u0qGitamCDT5nmK8FCO0HzXgEIMo4;
+        Max-Age=1800; Expires=Thu, 08 Oct 2020 21:27:01 GMT; Secure; HttpOnly; SameSite=None;
+        Domain=.beechat.hive-engine.com; Path=/
+      Accept-Ranges:
+      - bytes
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '{"username":"social","admin":false,"ws_token":"01EM501ECZX6W7S4APKVGCVYRE"}'
+  recorded_at: Thu, 08 Oct 2020 20:57:01 GMT
+- request:
+    method: get
+    uri: https://beechat.hive-engine.com/api/users/login?sig=1f90bef4fcdb822d8a1453cb67a870e8f75bc74f632cecd188a307a0f5241140c22663888712949a5ea813ff9da58094e870c9f0620d9b5387193d608f813a2a9a&ts=1602190707583&username=social
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - beeline/0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Thu, 08 Oct 2020 20:58:28 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '75'
+      Connection:
+      - keep-alive
+      Vary:
+      - origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate,Server-Authorization
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - refresh_token=Fe26.2**d542cb9e2b3889cf665c0a297d5004d164c3bc1ceb1ae2bb9017e274239afa5c*mfGgopiGBteGbqap5KWtug*PucVa9-rpN9D8qCtjVxqnFNkG-orq5wKMg8H_QfYZ9awThDxfY16IHpKH2VTEfnreRn_dxHBbQp43Ik7f3a27f4rWrguko6DsZYyfNQ2t_5B8Sqbd7IM8QqoX4N0MWYoru9R1NTjKwv6HGJKu-g5LgxtqKQD8RE9MPaHiDNx9MbehuKTLek6W9EOoPiAv-B42VsaFI4gOC8GbM6xyy-wiizLmkUNCTySTXkqx9wHth9QWdVytm64ALPlzUT2WG_OE4DS6S0qU5k52hIx6B56iIvQtXAKU8tkW2bvcU7VlDQmiK6Nt20ZCyxhxrfP6lhdpEyVbR5-jzfhfp_0TYEJ6zITSPJxhuNpOEvb-6yq_wSaVS5Hl1RRCjIIMs2Dg7qGuo-mVndMDGGngMvi90dI7w**968f04446de9eca4742e022e801db6e64fdeef15f4087529c55445a68fe9829f*UEU5xLSr-hYl1X3ZXuhj9D72U-PuQzF-xRuAHrLCZBc;
+        Max-Age=7776000; Expires=Wed, 06 Jan 2021 20:58:28 GMT; Secure; HttpOnly;
+        SameSite=None; Domain=.beechat.hive-engine.com; Path=/
+      - token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzb2NpYWwiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMjE5MDcwNywiZXhwIjoxNjAzOTkwNzA3fQ.SRGA75w3DzZM4sNe2JejTtjpggtg12XD5i0KEDtZU0s;
+        Max-Age=1800; Expires=Thu, 08 Oct 2020 21:28:28 GMT; Secure; HttpOnly; SameSite=None;
+        Domain=.beechat.hive-engine.com; Path=/
+      Accept-Ranges:
+      - bytes
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '{"username":"social","admin":false,"ws_token":"01EM50439676N51S2C3ZMDKAH9"}'
+  recorded_at: Thu, 08 Oct 2020 20:58:28 GMT
+- request:
+    method: get
+    uri: https://beechat.hive-engine.com/api/users/login?sig=20260c809f7f97fdc898f42a50cf561930ccf69cf0821035cdeff3c66b5e91cc55483678ac588911ef18b90055dd28b0b3c570fb31b6ab9d69851ed0fe3bdbc425&ts=1602191162248&username=social
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - beeline/0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Thu, 08 Oct 2020 21:06:02 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '75'
+      Connection:
+      - keep-alive
+      Vary:
+      - origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate,Server-Authorization
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - refresh_token=Fe26.2**9be23e0fb21f8b251abd732ef4f2894623c7d369134b9d2ae9ba7227458878ea*mk13NrHYIGv3PKob2CyEKQ*89JTSiFTTh_jY3GQ_LKU6AQzjxBJpGjsWLAZ7MX4TMNa5AgZmOkuzL_sEXt3YobFcQYc1KCOSMEKt7FO41_FUyL13GyVUWuZJi9CypnhAWtUCFMSlWDY2itqhSz2cX4bUsPLIbQYBDh1lB1Gz5Oskm9aX28v1sin05aD2s26TrafY0z8wZBA4CqAg01kYT9p3BKyoAq4fSEAt0ATuBNhDZSKbDTdIZEA6iJNWw6EKck-3fZeIwx8-4V3nzMHS_EKW2A_2XUt35C_e9AnPbgbtAK2-EIAguJ87x0kVHmuXEcsFxQJUpuf_tsjoU1C01eQSqOgnp4EFBgobfQdPHjH0KpjAlyNQsyWrvQyFItYmE9Hu14X9Z0ATgKYj7SZlx4mWhkdrcXed1v_Iw-zdHYtkw**ec8a38226f812403ff73e855c04100d6f6281a90498bbb8e8c08b41fbc70db02*ZUGcP4Pd2iWxrDWf-RyVhrHxwoRTrt0gCNZH7SC-eSY;
+        Max-Age=7776000; Expires=Wed, 06 Jan 2021 21:06:02 GMT; Secure; HttpOnly;
+        SameSite=None; Domain=.beechat.hive-engine.com; Path=/
+      - token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzb2NpYWwiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMjE5MTE2MiwiZXhwIjoxNjAzOTkxMTYyfQ.VEOReN045NhtmfKdpjQF-1LHr8d0fCugwIcUPUyUAMI;
+        Max-Age=1800; Expires=Thu, 08 Oct 2020 21:36:02 GMT; Secure; HttpOnly; SameSite=None;
+        Domain=.beechat.hive-engine.com; Path=/
+      Accept-Ranges:
+      - bytes
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '{"username":"social","admin":false,"ws_token":"01EM50HZ7HPDCVWXCJ1PA9N7Y9"}'
+  recorded_at: Thu, 08 Oct 2020 21:06:02 GMT
+- request:
+    method: get
+    uri: https://beechat.hive-engine.com/api/users/login?sig=1f2f2aefbfaf3f7f8c1952a3245e2ad9bf5a77851cf6771c7338a66e54473239d1d63ee9ec1da33855252ea40ca4add4a4b6de1ce947ccfe8d46be3012e925682e&ts=1602193131888&username=social
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - beeline/0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Thu, 08 Oct 2020 21:38:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '75'
+      Connection:
+      - keep-alive
+      Vary:
+      - origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate,Server-Authorization
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - refresh_token=Fe26.2**883825885522531acf6e7d3fa8310457e3063526a8ece3f0cd0c6bc177e7cb41*-QQT7-97d-Y3coh8KVP0yw*Mep6U9G9Fw1d4NTFN02J8exUG50nptoAAXbEPtt-3TxsKheZxXdbSpn_5LTaiaLmk26qEvku_rSrRS7OM7jZOvXX9nDoftPvRr2BtYIZl5Z1Vm6uQ8fh1bnEa4zPep_XLONHUvhk_x5sEulw5Hu6D6D_vR4kPLvEh5lvQ7JpWb52gC-t62o5N8rjV_DnXV3Ux4t2VRaK6n9PNs8ffr-O8N6QPIE9guuhyr2Oz8ehBqn7aMuGyZdMTmtXrUooGxdHnikPBxXqD-gs6A0SozxZrkGVX0hivAsq7IPkyi6VMWQHCFUtA8MdvjyAkQsmD8L7voTkrjXRLQQ3tt4xNdThZbOkwcxNHxfwAb3whWriFYpT8L7DT9QynFZLSpTn0CHEb9lM4Dvp5do-yN0JW4QuwQ**5a261d6fd44721e40c349128f3ac90dc475f790434665b605663f6c2bc618573*1tOPMBeFtrTuCtmUVNLHIhoqxbb_P9TiZVECeVSE7x8;
+        Max-Age=7776000; Expires=Wed, 06 Jan 2021 21:38:52 GMT; Secure; HttpOnly;
+        SameSite=None; Domain=.beechat.hive-engine.com; Path=/
+      - token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzb2NpYWwiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMjE5MzEzMiwiZXhwIjoxNjAzOTkzMTMyfQ.SW-zWtZ_6VGdJdn2kIuw6Jj2TqMqMJ16CY-eFGIxnFA;
+        Max-Age=1800; Expires=Thu, 08 Oct 2020 22:08:52 GMT; Secure; HttpOnly; SameSite=None;
+        Domain=.beechat.hive-engine.com; Path=/
+      Accept-Ranges:
+      - bytes
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '{"username":"social","admin":false,"ws_token":"01EM52E2PKSEKAQGQPYTDK4P71"}'
+  recorded_at: Thu, 08 Oct 2020 21:38:52 GMT
+- request:
+    method: get
+    uri: https://beechat.hive-engine.com/api/users/login?sig=20a5a4428410f0160c6bceedfb03c6278610cc99ad616fc7908ea69bfa61216d6d98a4b96ba9ef06d7210e36cd0e705148a2c27fd6e74a29d7b0aa771a591f2100&ts=1602193188002&username=social
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - beeline/0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Thu, 08 Oct 2020 21:39:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '75'
+      Connection:
+      - keep-alive
+      Vary:
+      - origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate,Server-Authorization
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - refresh_token=Fe26.2**7f1ee6f1a7601f794843d68a1afcd0e289164fccca3dd8018d220df86355e09d*2P_BSChisfaOn8BAq8gDNQ*rx-krcaFWfFuh6toQpQY99w9KsTnx_lEIIUguHUM7ysf3sxpg7bzLqjMu08hi9KUjAX7KuohYh4W77O1u6FBChgo-J96oGUJRtbXpViso1fbab0a4DKIyxup9746-QjcM_HHNjFy11HdxbfFTvH2L7YTJGRJ4VhU4yVd0cHz2jrIXCdtsyk90ZUQC3cBpSA5QHwLwLMO3M_hOMJC9cvgUPyb_-te9iq5BKe-EbggJdILrFlm4U8B8F398pbGWXCwft2vvn42yuJYG7kRABGHkMbPrTWfOu8nGVx5RuUkARUVB6LLjLrYvlQ1vHqmmTSZJTRexz04cl2rXUR_1f8zkUw6Dql7YzGj_PtBv0f_ubwZUfbPuwyjh9V3kdKCBQZLl1Y4jDfP9qP1_BNN2IHFdg**63e72e47bea5c5a659b0c1249f724c4b7e3afc8e9c74577a6e33152d4c22caf1*u8rPCaVWK8Zp7XXHGPt2wsBctfArtRod_96Y0PY1_Xk;
+        Max-Age=7776000; Expires=Wed, 06 Jan 2021 21:39:48 GMT; Secure; HttpOnly;
+        SameSite=None; Domain=.beechat.hive-engine.com; Path=/
+      - token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzb2NpYWwiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMjE5MzE4OCwiZXhwIjoxNjAzOTkzMTg4fQ.on8NlCewX22FV3hs2LMUQlo_G9aMoFN3FIoUATyx_sM;
+        Max-Age=1800; Expires=Thu, 08 Oct 2020 22:09:48 GMT; Secure; HttpOnly; SameSite=None;
+        Domain=.beechat.hive-engine.com; Path=/
+      Accept-Ranges:
+      - bytes
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '{"username":"social","admin":false,"ws_token":"01EM52FSFNPSFE2SKBDPFKBG77"}'
+  recorded_at: Thu, 08 Oct 2020 21:39:48 GMT
+- request:
+    method: get
+    uri: https://beechat.hive-engine.com/api/users/login?sig=2041ab6c9c0d760eb0a42f6bd7b396b15f4eaba23d0d968d073ffcdf7e9a407b7a57608c83f578708899d79f156de8f40dd863871a96687ea468470482153d8d15&ts=1602193418925&username=social
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - beeline/0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Thu, 08 Oct 2020 21:43:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '75'
+      Connection:
+      - keep-alive
+      Vary:
+      - origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate,Server-Authorization
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - refresh_token=Fe26.2**692e949dc8d6beeffd33a5e8601308ba0f884086fe5f284bc89dd082f1369cfe*UB82DxHrR-SN_RXQIISPCQ*lS5ymdDeFHJgaXHtQn0wGNKVlvVf7XATiWmIeZKED8bAGNpYeeDExMge6z9u9cw3lGRq8r-5s_d-b1rIvyZC-49FBGLUJYZMxjsndLIlX2vY3SDE4ZOUdNX-QWH-orqNiXv1F89DNgZdzAo4C1k8h8XmWFiUl_vAlxGvh3LVjTlnju1fvQLJECQMOJNN0V8Iof3f7vnJX64VQqmHcSxGrTNpmdRzr_lt_5f0B948sup9CFPdCYGnhhocojr8NHFL28pTLOM4U7KfoK21irfKNQfD-f_kJxpM24TLQ4EmzftuvJan7xsIR6ZNmUdCiwhQJFXaXFgfUWHB5P6DVSHycn0zF7qv9mF0a6u47zelsu45sNkLbS-kfOYa1MS5mQax-EyOAuU-9bSGr8fwr_9KAQ**d450c9a794617b251e2ff75497b26cc07da1da2ff64d1ab7482dbbc336c9f715*CEGn4OAMHodOQui7JkyTOr-7EP_H5gh_eN_omNE_FL0;
+        Max-Age=7776000; Expires=Wed, 06 Jan 2021 21:43:39 GMT; Secure; HttpOnly;
+        SameSite=None; Domain=.beechat.hive-engine.com; Path=/
+      - token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzb2NpYWwiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTYwMjE5MzQxOSwiZXhwIjoxNjAzOTkzNDE5fQ.XuDlh1QKgVkb1eI0u3VSmUAB3_D5cL3mZZx1XXf_Weo;
+        Max-Age=1800; Expires=Thu, 08 Oct 2020 22:13:39 GMT; Secure; HttpOnly; SameSite=None;
+        Domain=.beechat.hive-engine.com; Path=/
+      Accept-Ranges:
+      - bytes
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '{"username":"social","admin":false,"ws_token":"01EM52PV2J5WQ9RA7NMKBMCG7V"}'
+  recorded_at: Thu, 08 Oct 2020 21:43:39 GMT
+recorded_with: VCR 6.0.0
