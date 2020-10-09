@@ -39,5 +39,11 @@ module Beeline
         chat_message(conversation_id, from, reply)
       end
     end
+    
+    def process_friendship_requested(payload)
+      return unless friendships[:accept] == 'auto'
+      
+      accept_pending_friend_requests
+    end
   end
 end

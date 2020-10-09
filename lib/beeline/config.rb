@@ -2,6 +2,10 @@ require 'yaml'
 
 module Beeline
   module Config
+    def friendships
+      beechat[:friendships] || {}
+    end
+    
     def hive_account
       chain[:hive_account]
     end
@@ -14,8 +18,12 @@ module Beeline
       chain[:hive_public_key]
     end
   private
+    def beechat
+      @beechat_hash ||= yml[:beechat] || {}
+    end
+    
     def chain
-      @chain_hash ||= yml[:chain]
+      @chain_hash ||= yml[:chain] || {}
     end
     
     def yml

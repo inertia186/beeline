@@ -71,6 +71,8 @@ module Beeline
         puts "Authentication sent: #{session.inspect}"
         
         ping
+        
+        accept_pending_friend_requests
       else
         puts "Could not authenticate."
       end
@@ -78,6 +80,16 @@ module Beeline
     
     def chat_message(conversation_id, to, message)
       socket.send({type: 'chat-message', payload: {conversation_id: conversation_id, to: to, message: message}}.to_json)
+    def accept_pending_friend_requests
+      return unless friendships[:accept] == 'auto'
+      
+      session.friend_requests.each do |friend_request|
+        if socket.send({type: 'accept-friendship', payload: {id: friend_request['id']}}.to_json)
+          puts "Accept friendship sent for #{friend_request['username']}"
+        else
+          puts "Could not accept friendship request: #{friend_request}"
+        end
+      end
     end
     
     # @private

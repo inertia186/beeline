@@ -125,6 +125,7 @@ module Beeline
     end
     
     def friends; get('/users/friends'); end
+    def friend_requests; get('/users/friend-requests'); end
     def settings; get('/users/settings'); end
     
     def settings=(new_settings)
