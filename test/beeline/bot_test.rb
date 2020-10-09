@@ -27,14 +27,14 @@ class Beeline::BotTest < Beeline::Test
   def test_ping
     VCR.use_cassette('bot_process_ping', record: VCR_RECORD_MODE) do
       result = bot.process_chat_message(@payload.merge('content' => 'Ping!'))
-      refute_nil result
+      assert_nil result
     end
   end
   
   def test_help
     VCR.use_cassette('bot_process_help', record: VCR_RECORD_MODE) do
       result = bot.process_chat_message(@payload.merge('content' => '$help'))
-      refute_nil result
+      assert_nil result
     end
   end
   

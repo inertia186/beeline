@@ -6,7 +6,7 @@ module Beeline
   class Client
     include Beeline::Config
     
-    attr_reader :commands, :messages
+    attr_reader :commands, :messages, :session
     
     INITIAL_LATCH = 0.01
     MAX_LATCH = 3.0
@@ -60,14 +60,14 @@ module Beeline
         extensions: [PermessageDeflate],
         headers: {
           'User-Agent' => AGENT_ID,
-          'Cookie' => session.tokens
+          'Authorization' => "Bearer #{session.token}"
         },
         ping: WS_KEEPALIVE_TIME
       )
     end
     
     def authenticate
-      if result = socket.send({type: 'authenticate', payload: {username: hive_account, token: session.ws_token}}.to_json)
+      if result = socket.send({type: 'authenticate', payload: {username: hive_account, token: session.token}}.to_json)
         puts "Authentication sent: #{session.inspect}"
         
         ping
@@ -79,7 +79,11 @@ module Beeline
     end
     
     def chat_message(conversation_id, to, message)
-      socket.send({type: 'chat-message', payload: {conversation_id: conversation_id, to: to, message: message}}.to_json)
+      if socket.send({type: 'chat-message', payload: {conversation_id: conversation_id, to: to, message: message}}.to_json)
+        puts "Reply sent to #{to}"
+      end
+    end
+    
     def accept_pending_friend_requests
       return unless friendships[:accept] == 'auto'
       

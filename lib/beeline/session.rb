@@ -9,13 +9,12 @@ module Beeline
     include Config
     include Hive::Utils
     
-    attr_reader :ws_session, :cookies
+    attr_reader :ws_session
     
     def initialize
       @base_uri = nil
       @ws_uri = nil
-      @cookies = nil
-      @ws_session = nil
+      @beeline_session = nil
       @http = nil
     end
     
@@ -27,23 +26,12 @@ module Beeline
       @ws_uri ||= URI.parse(BEE_WS_URL)
     end
     
-    def tokens
-      login if @cookies.nil?
+    def token
+      login if @beeline_session.nil?
       
-      return if @cookies.nil?
+      return if @beeline_session.nil?
       
-      [
-        @cookies.split('; ').select{|t| t.start_with? 'token='}.first,
-        @cookies.split('; ').select{|t| t.start_with? 'refresh_token='}.first
-      ].join('; ')
-    end
-    
-    def ws_token
-      login if @ws_session.nil?
-      
-      return if @ws_session.nil?
-      
-      @ws_session['ws_token']
+      @beeline_session['token']
     end
     
     def http(&block)
@@ -53,7 +41,7 @@ module Beeline
     end
     
     def login
-      return @ws_session if !!@ws_session
+      return @beeline_session if !!@beeline_session
       
       timestamp = (Time.now.to_f * 1000).to_i
       message = "#{hive_account}#{timestamp}"
@@ -66,8 +54,7 @@ module Beeline
         response = http.request request
         
         if response.code == '200'
-          @cookies = response['Set-Cookie']
-          @ws_session = JSON[response.body]
+          @beeline_session = JSON[response.body]
         else
           JSON[response.body]
         end
@@ -75,14 +62,14 @@ module Beeline
     end
     
     def verify
-      raise "Unable to verify before logging in" unless !!@ws_session
+      raise "Unable to verify before logging in" unless !!@beeline_session
       
       resource = "#{base_uri.path}/users/verify"
       
       http do |http|
         request = Net::HTTP::Get.new resource
         request['User-Agent'] = AGENT_ID
-        request['Cookie'] = tokens
+        request['Authorization'] = "Bearer #{token}"
         response = http.request request
         
         JSON[response.body]
@@ -90,19 +77,18 @@ module Beeline
     end
     
     def refresh_token
-      raise "Unable to refresh token before logging in" unless !!@ws_session
+      raise "Unable to refresh token before logging in" unless !!@beeline_session
       
       resource = "#{base_uri.path}/refresh-token"
       
       http do |http|
         request = Net::HTTP::Get.new resource
         request['User-Agent'] = AGENT_ID
-        request['Cookie'] = tokens
+        request['Authorization'] = "Bearer #{@beeline_session['refresh_token']}"
         response = http.request request
         
         if response.code == '200'
-          @cookies = response['Set-Cookie']
-          @ws_session = JSON[response.body]
+          @beeline_session['token'] = JSON[response.body]['token']
         else
           JSON[response.body]
         end
@@ -110,14 +96,14 @@ module Beeline
     end
     
     def get(resource)
-      raise "Unable to request #{resource} before logging in" unless !!@ws_session
+      raise "Unable to request #{resource} before logging in" unless !!@beeline_session
       
       resource = "#{base_uri.path}#{resource}"
       
       http do |http|
         request = Net::HTTP::Get.new resource
         request['User-Agent'] = AGENT_ID
-        request['Cookie'] = tokens
+        request['Authorization'] = "Bearer #{token}"
         response = http.request request
         
         JSON[response.body]
@@ -129,7 +115,7 @@ module Beeline
     def settings; get('/users/settings'); end
     
     def settings=(new_settings)
-      raise "Unable to post settings before logging in" unless !!@ws_session
+      raise "Unable to post settings before logging in" unless !!@beeline_session
       
       resource = "#{base_uri.path}/users/settings"
       
@@ -138,7 +124,7 @@ module Beeline
         request.body = new_settings.to_json
         request['Content-Type'] = 'application/json; charset=UTF-8'
         request['User-Agent'] = AGENT_ID
-        request['Cookie'] = tokens
+        request['Authorization'] = "Bearer #{token}"
         response = http.request request
         
         JSON[response.body]
@@ -148,7 +134,7 @@ module Beeline
     def channels; get('/users/channels'); end
     
     def channels=(new_channels)
-      raise "Unable to post channels before logging in" unless !!@ws_session
+      raise "Unable to post channels before logging in" unless !!@beeline_session
       
       resource = "#{base_uri.path}/users/channels"
       
@@ -157,7 +143,7 @@ module Beeline
         request.body = new_channels.to_json
         request['Content-Type'] = 'application/json; charset=UTF-8'
         request['User-Agent'] = AGENT_ID
-        request['Cookie'] = tokens
+        request['Authorization'] = "Bearer #{token}"
         response = http.request request
         
         JSON[response.body]
@@ -168,7 +154,7 @@ module Beeline
     def conversations; get('/messages/conversations'); end
     
     def conversation(*id)
-      raise "Unable to get conversation before logging in" unless !!@ws_session
+      raise "Unable to get conversation before logging in" unless !!@beeline_session
       
       id = [id].flatten
       resource = "#{base_uri.path}/messages/conversation?ids=#{id.join(',')}"
@@ -176,7 +162,7 @@ module Beeline
       http do |http|
         request = Net::HTTP::Get.new resource
         request['User-Agent'] = AGENT_ID
-        request['Cookie'] = tokens
+        request['Authorization'] = "Bearer #{token}"
         response = http.request request
         
         JSON[response.body]
@@ -186,7 +172,7 @@ module Beeline
     def new_conversations; get('/messages/new'); end
     
     def chats(id, before = nil, limit = nil)
-      raise "Unable to get conversation before logging in" unless !!@ws_session
+      raise "Unable to get conversation before logging in" unless !!@beeline_session
       
       resource = "#{base_uri.path}/messages/chats?conversation_id=#{id}"
       resource += "&before=#{before.utc.iso8601}" if !!before
@@ -195,7 +181,7 @@ module Beeline
       http do |http|
         request = Net::HTTP::Get.new resource
         request['User-Agent'] = AGENT_ID
-        request['Cookie'] = tokens
+        request['Authorization'] = "Bearer #{token}"
         response = http.request request
         
         JSON[response.body]
