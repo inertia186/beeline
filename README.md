@@ -1,7 +1,7 @@
-beeline
+[beeline](https://github.com/inertia186/beeline-rb)
 =======
 
-BeeLine is a BeeChat Client Framework for Ruby.
+BeeLine is a [BeeChat](https://beechat.hive-engine.com/) Client Framework for Ruby.
 
 #### Installation
 
@@ -90,4 +90,4 @@ If you're using Tender, I'd love to hear from you.  Drop me a line and tell me w
   
 ## License
 
-I don't believe in intellectual "property".  If you do, consider BeeLine as licensed under a Creative Commons [![CC0](http://i.creativecommons.org/p/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/) License.
+I don't believe in intellectual "property".  If you do, consider BeeLine as licensed under a Creative Commons <a href="http://creativecommons.org/publicdomain/zero/1.0/"><img src="http://i.creativecommons.org/p/zero/1.0/80x15.png" alt="CC0" /></a> License.
