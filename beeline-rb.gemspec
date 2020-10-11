@@ -33,6 +33,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rb-readline', '~> 0.5', '= 0.5.5'
 
   spec.add_dependency 'hive-ruby', '~> 1.0', '= 1.0.0'
-  spec.add_dependency 'faye-websocket', '~> 0.11', '= 0.11.0'
+  spec.add_dependency 'faye-websocket', '~> 0.10'
   spec.add_dependency 'permessage_deflate', '~> 0.1', '= 0.1.4'
 end
