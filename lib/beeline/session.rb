@@ -5,6 +5,9 @@ require 'net/http'
 require 'digest/sha2'
 
 module Beeline
+  
+  # Manages the http and websockets session for the bot.  Also interacts with
+  # the http API.
   class Session
     include Config
     include Hive::Utils
@@ -40,6 +43,9 @@ module Beeline
       end
     end
     
+    # Logs in the bot.
+    # 
+    # See: {https://github.com/hive-engine/beechat-frontend/blob/master/DOCUMENTATION.md#get-userslogin GET /users/login}
     def login
       return @beeline_session if !!@beeline_session
       
@@ -61,6 +67,9 @@ module Beeline
       end
     end
     
+    # Verifies if the current access token is valid.
+    # 
+    # See: {https://github.com/hive-engine/beechat-frontend/blob/master/DOCUMENTATION.md#get-usersverify GET /users/verify}
     def verify
       raise "Unable to verify before logging in" unless !!@beeline_session
       
@@ -76,6 +85,9 @@ module Beeline
       end
     end
     
+    # Requests a new access token.
+    # 
+    # See: {https://github.com/hive-engine/beechat-frontend/blob/master/DOCUMENTATION.md#get-usersrefresh-token GET /users/refresh-token}
     def refresh_token
       raise "Unable to refresh token before logging in" unless !!@beeline_session
       
@@ -95,6 +107,9 @@ module Beeline
       end
     end
     
+    # Generalized get method.
+    # 
+    # @param resource [String] Resource to get, including query parameters.
     def get(resource)
       raise "Unable to request #{resource} before logging in" unless !!@beeline_session
       
@@ -110,10 +125,28 @@ module Beeline
       end
     end
     
+    # Returns bot's friends and blocked list.
+    # 
+    # See: {https://github.com/hive-engine/beechat-frontend/blob/master/DOCUMENTATION.md#get-usersfriends GET /users/friends}
     def friends; get('/users/friends'); end
+    
+    # Returns an array of bot's pending friend requests.
+    # 
+    # See: {https://github.com/hive-engine/beechat-frontend/blob/master/DOCUMENTATION.md#get-usersfriend-requests GET /users/friend-requests}
     def friend_requests; get('/users/friend-requests'); end
+    
+    # Returns bot's settings.
+    # 
+    # See: {https://github.com/hive-engine/beechat-frontend/blob/master/DOCUMENTATION.md#get-userssettings GET /users/settings}
     def settings; get('/users/settings'); end
     
+    # Updates the bot's settings.
+    # 
+    # See: {https://github.com/hive-engine/beechat-frontend/blob/master/DOCUMENTATION.md#post-userssettings POST /users/settings}
+    # 
+    # @param new_settings [Hash]
+    # @option new_settings [Hash] :dm
+    #   * :only_from_friends (Boolean) Only allow direct messages from friends.
     def settings=(new_settings)
       raise "Unable to post settings before logging in" unless !!@beeline_session
       
@@ -131,6 +164,9 @@ module Beeline
       end
     end
     
+    # Returns an array of bot-created channels.
+    # 
+    # See: {https://github.com/hive-engine/beechat-frontend/blob/master/DOCUMENTATION.md#get-userschannels GET /users/channels}
     def channels; get('/users/channels'); end
     
     # Creates a new channel.
@@ -154,10 +190,22 @@ module Beeline
         JSON[response.body]
       end
     end
-
+    
+    # Logs out the bot.
+    # 
+    # See: {https://github.com/hive-engine/beechat-frontend/blob/master/DOCUMENTATION.md#get-userslogout GET /users/logout}
     def logout; get('/users/logout'); end
+    
+    # Returns details of a conversation.
+    # 
+    # See: {https://github.com/hive-engine/beechat-frontend/blob/master/DOCUMENTATION.md#get-messagesconversation GET /messages/conversation}
     def conversations; get('/messages/conversations'); end
     
+    # Returns details of a conversation.
+    # 
+    # See: {https://github.com/hive-engine/beechat-frontend/blob/master/DOCUMENTATION.md#get-messagesconversation GET /messages/conversation}
+    # 
+    # @param id [String] (or Array<String>) Conversation id or array of ids.
     def conversation(*id)
       raise "Unable to get conversation before logging in" unless !!@beeline_session
       
@@ -174,8 +222,14 @@ module Beeline
       end
     end
     
+    # Return an array of unread messages.
+    # 
+    # See: {https://github.com/hive-engine/beechat-frontend/blob/master/DOCUMENTATION.md#get-messagesnew GET /messages/new}
     def new_conversations; get('/messages/new'); end
     
+    # Query chat messages by id, \
+    # 
+    # See: {https://github.com/hive-engine/beechat-frontend/blob/master/DOCUMENTATION.md#get-messageschats GET /messages/chats}
     def chats(id, before = nil, limit = nil)
       raise "Unable to get conversation before logging in" unless !!@beeline_session
       
@@ -193,6 +247,8 @@ module Beeline
       end
     end
     
+    # Calls #new_conversations and dumps all messages.
+    # 
     def dump_conversations
       new_conversations.map{|c| "#{c['timestamp']} :: #{c['conversation_id']} :: #{c['from']}: #{c['content']}"}
     end

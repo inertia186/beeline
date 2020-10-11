@@ -1,7 +1,7 @@
 [beeline](https://github.com/inertia186/beeline-rb)
 =======
 
-BeeLine is a [BeeChat](https://beechat.hive-engine.com/) Client Framework for Ruby.
+BeeLine is a [BeeChat](https://beechat.hive-engine.com/) Client Framework for Ruby.  BeeChat has been designed by [@reazuliqbal](https://hive.blog/@reazuliqbal).  BeeLine provides abstraction to for ruby developers to interact through the BeeChat [API](https://github.com/hive-engine/beechat-frontend/blob/master/DOCUMENTATION.md).
 
 #### Installation
 
