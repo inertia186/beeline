@@ -133,14 +133,19 @@ module Beeline
     
     def channels; get('/users/channels'); end
     
-    def channels=(new_channels)
+    # Creates a new channel.
+    # 
+    # See: {https://github.com/hive-engine/beechat-frontend/blob/master/DOCUMENTATION.md#post-userschannels POST /users/channels}
+    # 
+    # @param name [String]
+    def channels=(name)
       raise "Unable to post channels before logging in" unless !!@beeline_session
       
       resource = "#{base_uri.path}/users/channels"
       
       http do |http|
         request = Net::HTTP::Post.new resource
-        request.body = new_channels.to_json
+        request.body = name
         request['Content-Type'] = 'application/json; charset=UTF-8'
         request['User-Agent'] = AGENT_ID
         request['Authorization'] = "Bearer #{token}"
